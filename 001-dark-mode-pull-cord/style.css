@@ -23,8 +23,15 @@ body.dark-mode {
 .pull-cord-container {
     position: fixed;
     top: 0;
-    right: 80px;
+    right: 20px;
     z-index: 100;
+}
+
+@media (min-width: 800px) {
+  .pull-cord-container {
+    font-size: 18px;
+    right: 80px;
+  }
 }
 
 .pull-cord-container svg {
