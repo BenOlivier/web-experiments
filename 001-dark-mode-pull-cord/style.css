@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #F3F4F5;
+    --cord-color: #1D1D1F;
+}
+
+body {
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+body.dark-mode {
+    --bg-color: #1D1D1F;
+    --cord-color: #F3F4F5;
+}
+
+.pull-cord-container {
+    position: fixed;
+    top: 0;
+    right: 80px;
+    z-index: 100;
+}
+
+.pull-cord-container svg {
+    overflow: visible;
+}
+
+.cord-path {
+    fill: none;
+    stroke: var(--cord-color);
+    stroke-linecap: round;
+}
+
+.cord-handle {
+    fill: var(--cord-color);
+    cursor: grab;
+    transition: fill 0s;
+}
+
+.cord-handle:active {
+    cursor: grabbing;
+}
+
+.circle-reveal {
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 50;
+    transform: translate(-50%, -50%);
+}

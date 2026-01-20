@@ -1,0 +1,11 @@
+{
+  "name": "web-experiments",
+  "version": "1.0.0",
+  "description": "A collection of web experiments and creative coding projects",
+  "scripts": {
+    "dev": "live-server"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
